@@ -19,8 +19,8 @@ import { ActiveUserId } from '../../shared/decorators/ActiveUserId';
 import { TransactionType } from './entitities/TransactionType';
 
 import { OptionalParseEnumPipe } from '../../shared/pipes/OptionalParseEnumPipe';
-import { ParseObjectIdPipe } from 'src/shared/pipes/ParseObjectIdPipe';
-import { OptionalParseObjectIdPipe } from 'src/shared/pipes/OptionalParseObjectIdPipe';
+import { ParseObjectIdPipe } from '../../shared/pipes/ParseObjectIdPipe';
+import { OptionalParseObjectIdPipe } from '../../shared/pipes/OptionalParseObjectIdPipe';
 
 @Controller('transactions')
 export class TransactionController {

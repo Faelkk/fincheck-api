@@ -14,7 +14,7 @@ import { ActiveUserId } from '../../shared/decorators/ActiveUserId';
 import { CreateBankAccountDto } from './dto/create-bank-account.dto';
 import { UpdateBankAccountDto } from './dto/update-bank-account.dto';
 import { BankAccountsService } from './services/bank-accounts.service';
-import { ParseObjectIdPipe } from 'src/shared/pipes/ParseObjectIdPipe';
+import { ParseObjectIdPipe } from '../../shared/pipes/ParseObjectIdPipe';
 
 @Controller('bank-accounts')
 export class BankAccountsController {
