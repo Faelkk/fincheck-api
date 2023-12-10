@@ -10,7 +10,6 @@ import {
   HttpStatus,
   Query,
   ParseIntPipe,
-  ParseUUIDPipe,
 } from '@nestjs/common';
 
 import { TransactionService } from './services/transaction.service';
@@ -19,8 +18,9 @@ import { UpdateTransactionDto } from './dto/update-transaction.dto';
 import { ActiveUserId } from '../../shared/decorators/ActiveUserId';
 import { TransactionType } from './entitities/TransactionType';
 
-import { OptionalParseUUIDPipe } from '../../shared/pipes/OptionalParseUUIDPipe';
 import { OptionalParseEnumPipe } from '../../shared/pipes/OptionalParseEnumPipe';
+import { ParseObjectIdPipe } from '../../shared/pipes/ParseObjectIdPipe';
+import { OptionalParseObjectIdPipe } from '../../shared/pipes/OptionalParseObjectIdPipe';
 
 @Controller('transactions')
 export class TransactionController {
@@ -39,7 +39,7 @@ export class TransactionController {
     @ActiveUserId() userId: string,
     @Query('month', ParseIntPipe) month: number,
     @Query('year', ParseIntPipe) year: number,
-    @Query('bankAccountId', OptionalParseUUIDPipe) bankAccountId?: string,
+    @Query('bankAccountId', OptionalParseObjectIdPipe) bankAccountId?: string,
     @Query('type', new OptionalParseEnumPipe(TransactionType))
     type?: TransactionType,
   ) {
@@ -54,7 +54,7 @@ export class TransactionController {
   @Put(':transactionId')
   update(
     @ActiveUserId() userId: string,
-    @Param('transactionId', ParseUUIDPipe) transactionId: string,
+    @Param('transactionId', ParseObjectIdPipe) transactionId: string,
     @Body() updateTransactionDto: UpdateTransactionDto,
   ) {
     return this.transactionService.update(
@@ -68,7 +68,7 @@ export class TransactionController {
   @HttpCode(HttpStatus.NO_CONTENT)
   remove(
     @ActiveUserId() userId: string,
-    @Param('transactionId', ParseUUIDPipe) transactionId: string,
+    @Param('transactionId', ParseObjectIdPipe) transactionId: string,
   ) {
     return this.transactionService.remove(userId, transactionId);
   }

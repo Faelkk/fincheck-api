@@ -1,31 +1,28 @@
 import {
-  IsString,
-  IsNotEmpty,
-  IsUUID,
-  IsNumber,
-  IsPositive,
   IsDateString,
   IsEnum,
+  IsNotEmpty,
+  IsNumber,
+  IsPositive,
+  IsString,
 } from 'class-validator';
 import { TransactionType } from '../entitities/TransactionType';
 
 export class CreateTransactionDto {
-  @IsString()
   @IsNotEmpty()
-  @IsUUID()
+  @IsString()
   bankAccountId: string;
 
-  @IsString()
   @IsNotEmpty()
-  @IsUUID()
+  @IsString()
   categoryId: string;
 
-  @IsString()
   @IsNotEmpty()
+  @IsString()
   name: string;
 
-  @IsNumber()
   @IsNotEmpty()
+  @IsNumber()
   @IsPositive()
   value: number;
 
@@ -33,7 +30,6 @@ export class CreateTransactionDto {
   @IsDateString()
   date: string;
 
-  @IsNotEmpty()
   @IsEnum(TransactionType)
   type: TransactionType;
 }
