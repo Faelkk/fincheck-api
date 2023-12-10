@@ -13,6 +13,8 @@ export const ActiveUserId = createParamDecorator<undefined>(
     if (!userId) {
       throw new UnauthorizedException();
     }
+    console.log(userId);
+
     return userId;
   },
 );

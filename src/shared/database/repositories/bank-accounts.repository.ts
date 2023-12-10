@@ -12,7 +12,7 @@ export class BankAccountsRepository {
   ) {
     return this.prismaService.bankAccount.findMany(findManyDto);
   }
-  y;
+
   findFirst(findFirstDto: Prisma.BankAccountFindFirstArgs) {
     return this.prismaService.bankAccount.findFirst(findFirstDto);
   }
