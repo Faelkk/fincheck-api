@@ -1,73 +1,58 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Fincheck - api
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Essa API foi desenvolvida durante o curso JStack, além de ter proposito de aprimorar meu conhecimento em NestJS, Essa api foi feita para consumo em um projeto de gestão de finanças, o fincheck fe , esse projeto busca fornecer informações para melhor gestão financeira dos usuarios.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 🛠️ Tecnologias
 
-## Description
+📁 **Back-end**
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- [Nest.js](https://docs.nestjs.com/): Optei por usar o Nest.js como framework para o back-end devido à sua arquitetura de modulos e baseada em conceitos sólidos. A estrutura orientada a módulos e a integração com TypeScript possibilitam uma estrutura sólida para o desenvolvimento, facilitando a manutenção e escalabilidade do código.
 
-## Installation
+- [MongoDB](https://www.mongodb.com/pt-br): Escolhi MongoDB para o banco de dados por conta do seu modelo de dados flexivel, e por conta de sua facilidade com integração em diferentes linguagens de progamação.
 
-```bash
-$ npm install
-```
+- [Mongoose](https://mongoosejs.com/): O mongoose foi escolhido para fazer a conexão com o banco de dados e sua facilidade em fazer isso.
 
-## Running the app
+- [Prisma](https://www.prisma.io/): Utilizei o prisma como ORM, que facilita muito a interação com o banco de dados fazendo tarefas como criar e atualizar coisas no banco serem muito mais simples de serem realizadas.
 
-```bash
-# development
-$ npm run start
+🔋 **Controle de versão e deploy**
 
-# watch mode
-$ npm run start:dev
+- [Git](https://git-scm.com) Utilizei Git para controle de versionamento, o que facilita o trabalho colaborativo e o acompanhamento das alterações no código.
 
-# production mode
-$ npm run start:prod
-```
+- [Vercel](https://vercel.com/) A escolha da Vercel para deploy foi feita devido à sua integração fácil com repositórios Git e sua eficiência no deployment de aplicações front-end.
 
-## Test
+## Documentação
 
-```bash
-# unit tests
-$ npm run test
+A documentação da API é gerada automaticamente pelo Swagger, proporcionando facilidade na compreensão e utilização da API. Isso possibilita uma integração suave para os desenvolvedores.
 
-# e2e tests
-$ npm run test:e2e
+Fique à vontade para explorar a documentação e tirar proveito dos recursos disponibilizados por esta API para impulsionar seus projetos financeiros. Me dediquei ao maximo para conseguir oferecer uma boa experiência para os usuarios dessa api, e tambem para auxiliar os devs que buscam ajuda na documentação.
 
-# test coverage
-$ npm run test:cov
-```
+Certifique-se de explorar a documentação detalhada no Swagger para uma compreensão completa dos recursos da API, facilitando assim a implementação em seus projetos financeiros.
 
-## Support
+Espero que isso atenda às suas necessidades! Se precisar de mais ajustes ou informações, estou à disposição.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+⚙️ **Configuranções e Instalações**
 
-## Stay in touch
+Clone do Projeto
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+    $ git clone https://github.com/Faelkk/my-portfolio
 
-## License
+Instalando as dependências
 
-Nest is [MIT licensed](LICENSE).
+    $ npm install
+
+Iniciando o projeto
+
+    $ npm run dev
+
+<br>
+
+**Como me ajudar nesse projeto?**
+
+- Você ira me ajudar muito me seguindo aqui no GitHub
+- Dando uma estrela no projeto
+- Conectando-se comigo no LinkedIn para fazer parte da minha rede.
+
+<br>
+
+**Feito por**
+[Rafael Achtenberg](linkedin.com/in/rafael-achtenberg-7a4b12284/)
