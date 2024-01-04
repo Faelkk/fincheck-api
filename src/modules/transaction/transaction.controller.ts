@@ -21,7 +21,9 @@ import { TransactionType } from './entitities/TransactionType';
 import { OptionalParseEnumPipe } from '../../shared/pipes/OptionalParseEnumPipe';
 import { ParseObjectIdPipe } from '../../shared/pipes/ParseObjectIdPipe';
 import { OptionalParseObjectIdPipe } from '../../shared/pipes/OptionalParseObjectIdPipe';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('transactions')
 @Controller('transactions')
 export class TransactionController {
   constructor(private readonly transactionService: TransactionService) {}

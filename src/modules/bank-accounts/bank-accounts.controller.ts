@@ -15,7 +15,9 @@ import { CreateBankAccountDto } from './dto/create-bank-account.dto';
 import { UpdateBankAccountDto } from './dto/update-bank-account.dto';
 import { BankAccountsService } from './services/bank-accounts.service';
 import { ParseObjectIdPipe } from '../../shared/pipes/ParseObjectIdPipe';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('bank-accounts')
 @Controller('bank-accounts')
 export class BankAccountsController {
   constructor(private readonly bankAccountsService: BankAccountsService) {}
