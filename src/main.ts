@@ -21,10 +21,7 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup(SWAGGER_PREFIX, app, document, {
-    customCssUrl: '/swagger-ui.css',
-    customJs: ['/swagger-ui-bundle.js', '/swagger-ui-standalone-preset.js'],
-  });
+  SwaggerModule.setup(SWAGGER_PREFIX, app, document);
 
 
   const port = parseInt(process.env.PORT || '5000', 10);
