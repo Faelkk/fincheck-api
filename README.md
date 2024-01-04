@@ -34,8 +34,9 @@ Espero que isso atenda às suas necessidades! Se precisar de mais ajustes ou inf
 
 <img src="public/doc-swagger.png">
 <img src="public/doc-swagger2.png">
-<img src="public/swagger-schema.png">
-<img src="public/swagger-schema2.png">
+<img src="public/swagger schema.png">
+<img src="public/swagger schema2.png">
+<img src="public/swagger schema3.png">
 
 ⚙️ **Configuranções e Instalações**
 
