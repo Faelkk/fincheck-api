@@ -41,7 +41,7 @@ Espero que isso atenda às suas necessidades! Se precisar de mais ajustes ou inf
 
 Clone do Projeto
 
-    $ git clone https://github.com/Faelkk/my-portfolio
+    $ git clone https://github.com/Faelkk/fincheck-api
 
 Instalando as dependências
 
