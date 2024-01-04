@@ -33,7 +33,7 @@ Espero que isso atenda às suas necessidades! Se precisar de mais ajustes ou inf
 ## Doc Swagger
 
 <img src="public/doc-swagger.png">
-<img src="public/doc-swagger2.png.png">
+<img src="public/doc-swagger2.png">
 <img src="public/swagger-schema.png">
 <img src="public/swagger-schema2.png">
 
