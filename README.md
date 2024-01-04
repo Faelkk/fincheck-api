@@ -30,6 +30,13 @@ Certifique-se de explorar a documentação detalhada no Swagger para uma compree
 
 Espero que isso atenda às suas necessidades! Se precisar de mais ajustes ou informações, estou à disposição.
 
+## Doc Swagger
+
+<img src="public/doc-swagger.png">
+<img src="public/doc-swagger2.png.png">
+<img src="public/swagger-schema.png">
+<img src="public/swagger-schema2.png">
+
 ⚙️ **Configuranções e Instalações**
 
 Clone do Projeto
